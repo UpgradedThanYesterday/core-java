@@ -1,0 +1,16 @@
+Problem statement:
+    -   You are given a List of random Employees.
+    -   Your tasks is to find all the Employees who is getting salary 50000
+    -   You can print the output directly or may put into a list and print
+
+    I/P -
+    Employee e1 = new Employee("A","A",10000.00,"Associate");
+    Employee e2 = new Employee("B","B",53000.00,"Sr. Associate");
+    Employee e3 = new Employee("C","C",80000.00,"Manager");
+    Employee e4 = new Employee("D","D",49000.00,"Associate");
+    Employee e5 = new Employee("E","E",50001.00,"Tech. Lead");
+
+    O/P -
+    Employee e2 = new Employee("B","B",53000.00,"Sr. Associate");
+    Employee e3 = new Employee("C","C",80000.00,"Manager");
+    Employee e5 = new Employee("E","E",50001.00,"Tech. Lead");
