@@ -1,0 +1,7 @@
+Problem statement:
+    -   You are given an Array of random numbers.
+    -   Your tasks is to find all the numbers greater than 10
+    -   You can print the output directly or may put into a list and print
+
+    int[] arr = [11,2,3,14,3,6,5,17,9,18]
+    int[] op = [11,14,17,18]
