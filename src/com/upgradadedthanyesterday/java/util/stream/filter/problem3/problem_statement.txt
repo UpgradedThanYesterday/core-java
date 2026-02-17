@@ -1,0 +1,7 @@
+Problem statement:
+    -   You are given an Array of random Strings.
+    -   Your tasks is to find all the Strings that starting with 'A'
+    -   You can print the output directly or may put into a list and print
+
+    String[] arr = ["Apple","Banana","Avocado"]
+    O/P - "Apple",  "Avocado"
