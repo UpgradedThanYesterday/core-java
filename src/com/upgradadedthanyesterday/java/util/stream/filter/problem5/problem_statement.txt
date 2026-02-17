@@ -1,0 +1,7 @@
+Problem statement:
+    -   You are given a List of random Strings.
+    -   Your tasks is to find all non-null Strings
+    -   You can print the output directly or may put into a list and print
+
+    List<String> list = List.of("A","AA","AABBB",null,"ABCD",null)
+    O/P - "A", "AA", "AABBB", "ABCD"
