@@ -47,6 +47,7 @@ public class Order {
     public String toString() {
         return "Order{" +
                 "id=" + getId() +
+                ", amount="+ getAmount() +
                 ", customer=" + getCustomer() +
                 ", creationTime=" + getCreationTime() +
                 ", deliveryTime=" + getDeliveryTime() +
