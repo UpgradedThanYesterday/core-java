@@ -1,0 +1,21 @@
+Problem statement:
+    -   You have order table with the following columns: id, customer_name, amount, status, created_at, delivered_at, shipping_address
+    -   Your tasks is to find all the orders that are delivered or high pending (amount > 5000) and print the customer names.
+    -   You can print the output directly or may put into a list and print
+
+Orders
+_______
+id	|	customer_name	|	amount	|	status	    |	created_at	        |	delivered_at	    |	shipping_address    |
+1	|	Alice Johnson	|	950.00	|	DELIVERED	|	2026-02-10 10:00:00	|	2026-02-12 14:30:00	|	123 Main St         |
+2	|	Bob Martinez	|	7200.50	|	PENDING	    |	2026-02-12 09:15:00	|	NULL	            |	456 Oak Ave         |
+3	|	Carol Singh	    |	150.00	|	PENDING	    |	2026-02-13 11:20:00	|	NULL	            |	789 Pine Rd         |
+4	|	David Lee	    |	450.00	|	DELIVERED	|	2026-02-08 08:00:00	|	2026-02-09 12:00:00	|	321 Elm St          |
+5	|	Eve Turner	    |	8200.75	|	PENDING	    |	2026-02-14 15:00:00	|	NULL	            |	12 Market Pl        |
+6	|	Frank Moore	    |	1500.00	|	PENDING	    |	2026-02-15 13:30:00	|	NULL	            |	99 River Rd         |
+
+Expected Output:
+-------------
+Alice Johnson
+Bob Martinez
+David Lee
+Eve Turner
