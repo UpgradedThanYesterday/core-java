@@ -1,0 +1,40 @@
+Problem statement:
+    -   You have Transaction table with the following columns: id, order_id, transaction_ref, payment_method, transaction_amount, transaction_status, transaction_date, remarks
+    -   Your tasks is to find first valid transaction that is successful and transaction amount < 500.
+    -   You can print the output directly or may put into a list and print
+
+
+Customer
+-----------
+id	|	name	        |	address             |
+1	|	Alice Johnson	|	123 Main St         |
+2	|	Bob Martinez	|	456 Oak Ave         |
+3	|	Carol Singh	    |	789 Pine Rd         |
+4	|	David Lee	    |	321 Elm St          |
+5	|	Eve Turner	    |	12 Market Pl        |
+
+
+Orders
+_______
+id	|	customer_name	|	amount	|	status	    |	created_at	        |	delivered_at	    |	shipping_address    |
+1	|	Alice Johnson	|	950.00	|	DELIVERED	|	2026-02-10 10:00:00	|	2026-02-12 14:30:00	|	123 Main St         |
+2	|	Bob Martinez	|	7200.50	|	PENDING	    |	2026-02-12 09:15:00	|	NULL	            |	456 Oak Ave         |
+3	|	Carol Singh	    |	150.00	|	PENDING	    |	2026-02-13 11:20:00	|	NULL	            |	789 Pine Rd         |
+4	|	David Lee	    |	450.00	|	DELIVERED	|	2026-02-08 08:00:00	|	2026-02-09 12:00:00	|	321 Elm St          |
+5	|	Eve Turner	    |	8200.75	|	PENDING	    |	2026-02-14 15:00:00	|	NULL	            |	12 Market Pl        |
+6	|	Frank Moore	    |	1500.00	|	PENDING	    |	2026-02-15 13:30:00	|	NULL	            |	99 River Rd         |
+
+Transactions
+____________________________________________________________________________________________________________
+id	|	order_id	|	transaction_ref	|	payment_method	|	transaction_amount	|	transaction_status	|	transaction_date	        |	remarks                 |
+1	|	1	        |	TXN1001	        |	CREDIT_CARD	    |	950.00	            |	SUCCESS	            |	2026-02-10 10:05:00	        |	Paid successfully       |
+2	|	2	        |	TXN1002	        |	UPI	            |	7200.50	            |	FAILED	            |	2026-02-12 09:20:00	        |	Insufficient balance    |
+3	|	3	        |	TXN1003	        |	DEBIT_CARD	    |	150.00	            |	PENDING	            |	2026-02-13 11:25:00	        |	Awaiting confirmation   |
+4	|	4	        |	TXN1004	        |	NET_BANKING	    |	450.00	            |	SUCCESS	            |	2026-02-08 08:10:00	        |	Paid successfully       |
+5	|	5	        |	TXN1005	        |	UPI	            |	8200.75	            |	FAILED	            |	2026-02-14 15:10:00	        |	Payment timeout         |
+6	|	6	        |	TXN1006	        |	CREDIT_CARD	    |	1500.00	            |	PENDING	            |	2026-02-15 13:35:00	        |	Payment processing      |
+
+
+Expected Output:
+-------------
+David Lee
