@@ -1,0 +1,40 @@
+Problem statement:
+    -   You are given a List of Strings with null, non-null, very long and very short strings.
+    -   Your tasks is to find all the non-null and trimmed strings with length greater than 5 and print them. The output should be unique and sorted in natural order.
+    -   You can print the output directly or may put into a list and print
+
+Input List:
+-------------
+List<String> list = Arrays.asList(
+                "Java",
+                " Spring ",
+                null,
+                "",
+                "Microservices",
+                "Java",                // duplicate
+                "  Hibernate",
+                "Docker  ",
+                "  ",
+                "Kubernetes",
+                null,                  // duplicate null
+                "AWS",
+                " spring ",            // duplicate (case + spaces variation)
+                "DevOps",
+                "",
+                "React",
+                " Angular ",
+                "SQL",
+                "NoSQL",
+                "Java  "               // duplicate with trailing space
+        );
+
+Expected Output:
+-------------
+Angular
+DevOps
+Docker
+Hibernate
+Kubernetes
+Microservices
+Spring
+spring
