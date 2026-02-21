@@ -1,0 +1,28 @@
+Problem statement:
+    -   You have Product table with the following columns: id, name, product_type, manufacture_date, expiry_date, unit_price, discount
+    -   Your tasks is to find the products that are in stock (expiry_date > current date) and have discount > 0 and print the product names.
+    -   You can print the output directly or may put into a list and print
+
+Product Type
+__________________________________________________
+id                |	name              | discount  |
+1                 |    DAIRY          |    5      |
+2                 |    GROCERY        |    10     |
+3                 |    SNACKS         |    0      |
+4                 |   ELECTRONICS     |    15     |
+5                 |   PERSONAL_CARE   |    8      |
+
+Products
+________________________________________________________________________________________________________
+id	|	name	                |	product_type	|	manufacture_date	|	expiry_date	        |	unit_price	|	discount    |
+1	|	Amul Milk 1L	        |	1   	        |	2026-02-10	        |	2026-02-17	        |	60.00	    |	5           |
+2	|	Basmati Rice 5kg	    |	2   	        |	2026-01-15	        |	2027-01-14	        |	550.00	    |	10          |
+3	|	Parle-G Biscuits	    |	3   	        |	2026-02-01	        |	2026-08-01	        |	25.00	    |	0           |
+4	|	iPhone 15	            |	4       	    |	2025-12-20	        |	NULL	            |	79999.00	|	15          |
+5	|	Colgate Toothpaste	    |	5           	|	2026-01-05	        |	2028-01-04	        |	120.00	    |	8           |
+
+Expected Output:
+-------------
+Amul Milk 1L
+Basmati Rice 5kg
+Colgate Toothpaste
