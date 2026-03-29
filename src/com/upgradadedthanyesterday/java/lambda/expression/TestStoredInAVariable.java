@@ -1,4 +1,4 @@
-package com.upgradadedthanyesterday.java.lambda;
+package com.upgradadedthanyesterday.java.lambda.expression;
 
 /**
  * Lambda expression stored in a variable
