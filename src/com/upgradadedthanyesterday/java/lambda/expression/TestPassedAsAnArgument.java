@@ -1,4 +1,4 @@
-package com.upgradadedthanyesterday.java.lambda;
+package com.upgradadedthanyesterday.java.lambda.expression;
 
 /**
  * Lambda Expression Passed as an Argument to a Method
