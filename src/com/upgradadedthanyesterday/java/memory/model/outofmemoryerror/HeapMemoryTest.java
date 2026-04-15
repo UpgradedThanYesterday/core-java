@@ -9,7 +9,7 @@ import java.util.List;
  * Since the list object i.e. new ArrayList object will be active so none of the byte array object will be eligible for
  * Garbage collection and hence the Heap Area will become full and throw OutOfMemoryError
  */
-public class HeapSpaceTest {
+public class HeapMemoryTest {
     public static void main(String[] args) {
         List<byte[]> list = new ArrayList<>();
         while (true) {
