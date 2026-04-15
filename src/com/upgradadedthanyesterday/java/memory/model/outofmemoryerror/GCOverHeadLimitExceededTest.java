@@ -15,7 +15,7 @@ public class GCOverHeadLimitExceededTest {
 
         int i = 0;
         while (true) {
-            // Create many duplicate Strings (wastes memory slowly)
+            // Create many unique Strings (wastes memory slowly)
             list.add(String.valueOf(i).intern());
 
             // limit size slightly to avoid immediate heap crash
