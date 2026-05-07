@@ -1,0 +1,7 @@
+Problem statement:
+    -   You are given an List of random Strings.
+    -   Your tasks is to modify all the even numbers by doubling them
+    -   You can print the output directly or may put into a list and print
+
+    List<Integer> in = [1,2,3,4,5...,100]
+    List<Integer> op = [2,4,8,10....,200]

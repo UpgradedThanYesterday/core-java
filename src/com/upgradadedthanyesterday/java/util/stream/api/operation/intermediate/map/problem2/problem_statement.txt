@@ -1,0 +1,7 @@
+Problem statement:
+    -   You are given an List of random Strings.
+    -   Your tasks is to modify all the Strings to uppercase that starts with A
+    -   You can print the output directly or may put into a list and print
+
+    List<String> in = ["apple", "banana", "avocado", "orange"]
+    List<String> op = ["APPLE", "banana", "AVOCADO", "orange"]

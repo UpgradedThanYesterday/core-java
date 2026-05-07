@@ -19,5 +19,7 @@ public class FindEvenNumbersArrayOutPut {
         // Output
         System.out.println("The input Array is : "+ Arrays.toString(arr));
         System.out.println("The output Array is : "+ Arrays.toString(op));
+
+        System.out.println("Upgraded than Yesterday"+(200 & 15));
     }
 }
