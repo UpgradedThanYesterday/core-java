@@ -7,7 +7,7 @@ public class DeadlockExample {
 
         Thread t1 = new Thread(()->{
             synchronized (LOCK_1) {
-                System.out.println("I am "+Thread.currentThread().getName()+" holding the LOCK_1");
+                System.out.println("\n\nI am "+Thread.currentThread().getName()+" holding the LOCK_1");
                 try{
                     System.out.println(Thread.currentThread().getName()+" is sleeping for 100 ms");
                     Thread.sleep(100); // holding LOCK_1 and sleeping for 100ms so by that time, LOCK_2 will be acquired by t2
@@ -25,7 +25,7 @@ public class DeadlockExample {
 
         Thread t2 = new Thread(()->{
             synchronized(LOCK_2) {
-                System.out.println("I am "+Thread.currentThread().getName()+" holding the LOCK_2");
+                System.out.println("\n\nI am "+Thread.currentThread().getName()+" holding the LOCK_2");
                 try {
                     System.out.println(Thread.currentThread().getName()+" is sleeping for 100 ms");
                     Thread.sleep(100); // holding the LOCK_2 and sleeping for 100ms so by that time, LOCK_1 will be acquired by t1
