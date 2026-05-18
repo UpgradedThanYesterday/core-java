@@ -10,7 +10,7 @@ public class DeadlockFixLokOrderExample {
                 System.out.println("\n\nI am "+Thread.currentThread().getName()+" holding the LOCK_1");
                 try{
                     System.out.println(Thread.currentThread().getName()+" is sleeping for 100 ms");
-                    Thread.sleep(1); // holding LOCK_1 and sleeping for 100ms so by that time, LOCK_2 will be acquired by t2
+                    Thread.sleep(100); // holding LOCK_1 and sleeping for 100ms so by that time, LOCK_2 will be acquired by t2
                     System.out.println(Thread.currentThread().getName()+" woke up now");
                 } catch (InterruptedException e) {
                     System.out.println("Exception "+e);
