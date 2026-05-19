@@ -16,7 +16,7 @@ public class DeadlockExample {
                     System.out.println("Exception "+e);
                 }
 
-                System.out.println(Thread.currentThread().getName()+" currently here to get the LOCK_2");
+                System.out.println(Thread.currentThread().getName()+" is waiting for LOCK_2");
                 synchronized(LOCK_2) {
                     System.out.println("I am "+Thread.currentThread().getName()+" holding the LOCK_2");
                 }
@@ -34,7 +34,7 @@ public class DeadlockExample {
                     System.out.println("Exception " + e);
                 }
 
-                System.out.println(Thread.currentThread().getName()+" currently here to get the LOCK_1");
+                System.out.println(Thread.currentThread().getName()+" is waiting for the LOCK_1");
                 synchronized(LOCK_1) {
                     System.out.println("I am "+Thread.currentThread().getName()+" holding the LOCK_1");
                 }

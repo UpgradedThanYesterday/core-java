@@ -1,6 +1,6 @@
 package com.upgradadedthanyesterday.java.concurrency.deadlock;
 
-public class DeadlockFixLokOrderExample {
+public class DeadlockFixUsingLockOrderExample {
     private static final Object LOCK_1 = new Object();
     private static final Object LOCK_2 = new Object();
     public static void main(String[] args) {
